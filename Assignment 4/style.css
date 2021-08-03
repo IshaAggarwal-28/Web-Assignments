@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    background-color: coral;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 65px;
+}
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    color:cornsilk;
+    font-size: 25px;
+    padding: 10px 5px;
+}
+a:hover{
+    background:orangered;
+    cursor:pointer;
+}
+#name{
+    color:cornsilk;
+    font-size: 40px;
+    padding: 20px 10px;
+    text-align:left;
+    font-family: cursive;
+}
+li{
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:620px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75vw;
+    margin:30px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+figure{
+    width: 296px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align:center;
+    box-shadow: 0px 0px 3px rgb(104 ,104 ,104);
+    transition:100ms;
+}
+figure:hover{
+    transform: scale(1.01);
+    cursor:pointer;
+}
+figure img{
+    height: 200px;
+    width: 100%;
+}
+figcaption button{
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: none;
+
+}
+figcaption button:hover{
+    background: coral;
+    color:cornsilk;
+    cursor:pointer;
+}
+figcaption p{
+    font-weight: 300;
+}
+#caption{
+    text-align:center;
+}
+.slideshow{
+    width: 60vw;
+    height: 450px;
+    margin:50px auto;
+    overflow: hidden;
+}
+.slide{
+    float:left;
+}
+
+.slide img{
+    height: 450px;
+    width:60vw;
+}
+.slide-images{
+    width: calc(70vw*6);
+    animation: 18s ease infinite slider;
+}
+@keyframes slider{
+    16%{
+        margin-left: 0px;
+    }
+    32%{
+        margin-left: calc(-60vw*1);
+    }
+    48%{
+        margin-left: calc(-60vw*2);
+    }
+    64%{
+        margin-left: calc(-60vw*3);
+    }
+    80%{
+        margin-left: calc(-60vw*4);
+    }
+}
+.contact{
+    position: relative;
+    min-height: 80vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: coral;
+
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:darkslategray;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+.correction{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.correction .contactInfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.correction .contactInfo .box{
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+
+.correction .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.correction .contactInfo .text h3{
+    font-weight: 500;
+    color:darkslategray;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background:#fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize:none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 16px 0;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width:100px;
+    background: darkslategray;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .correction{
+        flex-direction: column;
+    }
+    .correction .contactInfo{
+        margin-bottom: 40px;
+    }
+    .correction .contactInfo, .contactForm{
+        width:100%;
+    }
+}
+
+
+
