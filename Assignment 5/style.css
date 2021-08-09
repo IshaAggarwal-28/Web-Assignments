@@ -1,0 +1,127 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eae4e9;
+}
+
+
+
+.main {
+    max-width: 65%;
+    margin: 20px auto;
+}
+
+
+.f1div {
+    background-color: white;
+    padding-left: 10px;
+}
+
+.f1ulist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.f1list {
+    margin-right: 25px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.f2div {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+img {
+    height: 300px;
+    width: 250px;
+
+}
+
+.idiv {
+    text-align: left;
+    padding: 60px 40px;
+    margin-left: 50px;
+}
+h1{
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #bdb2ff;
+    color: #bdb2ff;
+    background-color: white;
+}
+.btn:hover{
+    background-color: #eae4e9;
+}
+
+.f3div {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 50px;
+}
+
+.f4div {
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 50px;
+}
+
+.f4list {
+    list-style-type: none;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
+
+
+.f5div {
+    background-color: white;
+    padding: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.f5h {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.f5list {
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.all:hover {
+    box-shadow: 0px 0px 10px #deaaff;
+}
+
+@media screen and (max-width:530px) {
+    .idiv{
+        margin-left:30px;
+    }
+    
+}
